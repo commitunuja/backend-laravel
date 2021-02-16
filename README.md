@@ -1,2 +1,13 @@
-# backend-laravel
-Pembuatan modul Laravel Js ini diharapkan bisa meningkatkan sumber daya manusia mahasiswa di Fakultas Teknik Universitas Nurul Jadid. Jika ada saran dan masukan silahkan bisa membuat Issues di Repositori ini.
+# Repositori Pembuatan Modul Backend Laravel
+
+Dosen Pembimbing :
+
+- Kamil Malik, M.Kom
+- Gulpi Qorik Oktagalu Pratamasunu, M.Kom
+
+Focusing on :
+
+- [Laravel](https://laravel.com/)
+
+### Sub Materi Express Js :
+- Pengenalan Laravel (Contoh)
