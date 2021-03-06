@@ -42,7 +42,7 @@ Focusing on :
 27. CRUD-Insert data
 28. CRUD-Edit data
 29. CRUD- Delete data
-CRUD-Detail data
+30. CRUD-Detail data
 
 ##### B. Project
 
