@@ -17,9 +17,9 @@ Focusing on :
 2. Instalasi Software
 3. Instalasi laravel
 4. Pengenalan routing
-- Belajar membuat routing
-- Routing dengan parameter
-- Route name
+5. Belajar membuat routing
+6. Routing dengan parameter
+7. Route name
 - Route group
 - Route view
 - Mengenal konsep MVC
