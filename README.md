@@ -13,9 +13,10 @@ Focusing on :
 
 ##### A. Basic Laravel
 
-- [Pengenalan Laravel](laravel/pengenalan.md)
-- Instalasi Software
-- Instalasi laravel
+1. [Pengenalan Laravel](laravel/pengenalan.md)
+2. Instalasi Software
+3. Instalasi laravel
+
 - Pengenalan routing
 - Belajar membuat routing
 - Routing dengan parameter
