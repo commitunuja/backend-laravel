@@ -34,7 +34,7 @@ Focusing on :
   - Route Resource
 5. Database
   - Konfigurasi Koneksi database
-  - Migration
+  - [Migration](Database/pengantar.md)
   - Schema Builder
   - Seeding
 6. Model & Eloquent
