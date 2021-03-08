@@ -9,40 +9,55 @@ Focusing on :
 
 - [Laravel](https://laravel.com/)
 
-### Sub Materi Express Js :
+### Sub Materi Laravel:
 
 ##### A. Basic Laravel
 
 1. [Pengenalan Laravel](laravel/pengenalan.md)
-2. Instalasi Software
-3. Instalasi laravel
-4. Pengenalan routing
-5. Belajar membuat routing
-6. Routing dengan parameter
-7. Route name
-8. Route group
-9. Route view
-10. Mengenal konsep MVC
-11. Cara membuat controller
-12. Cara passing data dari controller ke view
-13. Controller resource
-14. Mengenal blade
-15. If else di blade
-16. Foreach dan forelse di blade
-17. Belajar membuat template di blade
-18. Fungsi include di blade
-19. Membuat template di boostrap
-20. Penanganan form di laravel
-21. Form validasi di laravel
-22. Setting database
-23. Migration
-24. Model
-25. Seeder
-26. CRUD-Tampil data
-27. CRUD-Insert data
-28. CRUD-Edit data
-29. CRUD- Delete data
-30. CRUD-Detail data
+2. Instalasi & Konfigurasi
+   - Membuat Project Laravel Baru
+   - Konfigurasi Awal
+   - Variabel Lingkungan (.env)
+3.Arsitektur Laravel
+  - Konsep MVC
+  - Pengenalan Routing
+  - Pengenalan Model
+  - Pengenalan Controller
+  - Pengenalan View
+4.Route & Controller
+  - Tipe-tipe Route (Web route ,API route & Console route)
+  - Route Parameter
+  - Route Berdasarkan Jenis HTTP Method
+  - Route Group
+  - Route View
+  - Controller Resource
+  - Route Resource
+5.Database
+  - Konfigurasi Koneksi database
+  - Migration
+  - Schema Builder
+  - Seeding
+6.Model & Eloquent
+  - Model Attribute / properti
+  - Mass Assignment
+  - Query Record (Insert,Update,Delete)
+  - Soft Deletes
+  - Data Pagination
+7.View
+  - Menampilkan view dari controller
+  - Menampilkan data ke view
+  - Control Structure (@IF, @unless, @empty, @auth ,etc)
+  - Menampilkan Kumpulan Data (@foreach, @forelse, @for, @while , etc) 
+  - Blade Layout, Section & Component
+      - @extends
+      - @yield
+      - @section
+      - etc
+8.Relationship
+  - Pengenalan relationship
+  - One-To-One Relationship
+  - One-To-Many Relationship
+  - Many-To-Many Relationship
 
 ##### B. Project
 
