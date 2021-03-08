@@ -18,13 +18,13 @@ Focusing on :
    - Membuat Project Laravel Baru
    - Konfigurasi Awal
    - Variabel Lingkungan (.env)
-3.Arsitektur Laravel
+3. Arsitektur Laravel
   - Konsep MVC
   - Pengenalan Routing
   - Pengenalan Model
   - Pengenalan Controller
   - Pengenalan View
-4.Route & Controller
+4. Route & Controller
   - Tipe-tipe Route (Web route ,API route & Console route)
   - Route Parameter
   - Route Berdasarkan Jenis HTTP Method
@@ -32,18 +32,18 @@ Focusing on :
   - Route View
   - Controller Resource
   - Route Resource
-5.Database
+5. Database
   - Konfigurasi Koneksi database
   - Migration
   - Schema Builder
   - Seeding
-6.Model & Eloquent
+6. Model & Eloquent
   - Model Attribute / properti
   - Mass Assignment
   - Query Record (Insert,Update,Delete)
   - Soft Deletes
   - Data Pagination
-7.View
+7. View
   - Menampilkan view dari controller
   - Menampilkan data ke view
   - Control Structure (@IF, @unless, @empty, @auth ,etc)
@@ -53,7 +53,7 @@ Focusing on :
       - @yield
       - @section
       - etc
-8.Relationship
+8. Relationship
   - Pengenalan relationship
   - One-To-One Relationship
   - One-To-Many Relationship
