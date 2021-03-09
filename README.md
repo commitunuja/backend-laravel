@@ -13,7 +13,7 @@ Focusing on :
 
 ##### A. Basic Laravel
 
-1. [Pengenalan Laravel](pengenalan laravel/pengenalan.md)
+1. [Pengenalan Laravel](pengenalanlaravel/pengenalan.md)
 2. Instalasi & Konfigurasi
    - Membuat Project Laravel Baru
    - Konfigurasi Awal
