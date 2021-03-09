@@ -22,7 +22,7 @@ Focusing on :
   - Konsep MVC
   - Pengenalan Routing
   - Pengenalan Model
-  - [Pengenalan Controller](arsitekturlaravel/pengenalancontroller.md)
+  - [Pengenalan Controller](pengenalancontroller/controller.md)
   - Pengenalan View
 4. Route & Controller
   - Tipe-tipe Route (Web route ,API route & Console route)
