@@ -14,7 +14,7 @@ Focusing on :
 ##### A. Basic Laravel
 
 1. [Pengenalan Laravel](pengenalanlaravel/pengenalan.md)
-2. [Instalasi & Konfigurasi](instalasidankonfigurasi.md)
+2. [Instalasi & Konfigurasi](instalasidankonfigurasi)
    - Membuat Project Laravel Baru
    - Konfigurasi Awal
    - Variabel Lingkungan (.env)
