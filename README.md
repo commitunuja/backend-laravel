@@ -15,9 +15,9 @@ Focusing on :
 
 1. [Pengenalan Laravel](1. Pengenalan_laravel/Pengenalan.md)
 2. [Instalasi & Konfigurasi](2. Instalasi & Konfigurasi)
-   a. Membuat Project Laravel Baru
-   b. Konfigurasi Awal
-   c. Variabel Lingkungan (.env)
+  - Membuat Project Laravel Baru
+  - Konfigurasi Awal
+  - Variabel Lingkungan (.env)
 3. Arsitektur Laravel
    a. Konsep MVC
    b. Pengenalan Routing
