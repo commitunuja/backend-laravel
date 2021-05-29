@@ -13,51 +13,51 @@ Focusing on :
 
 ##### A. Basic Laravel
 
-1. [Pengenalan Laravel](1. Pengenalan_laravel/Pengenalan.md)
-2. [Instalasi & Konfigurasi](2. Instalasi & Konfigurasi)
-  - Membuat Project Laravel Baru
-  - Konfigurasi Awal
-  - Variabel Lingkungan (.env)
+1. [Pengenalan Laravel](PengenalanLaravel/Pengenalan.md)
+2. [Instalasi & Konfigurasi](Instalasi&Konfigurasi)
+   - Membuat Project Laravel Baru
+   - Konfigurasi Awal
+   - Variabel Lingkungan (.env)
 3. Arsitektur Laravel
-   a. Konsep MVC
-   b. Pengenalan Routing
-   c. Pengenalan Model
-   d. [Pengenalan Controller](pengenalancontroller/controller.md)
-   e. Pengenalan View
+  - Konsep MVC
+  - Pengenalan Routing
+  - Pengenalan Model
+  - [Pengenalan Controller](pengenalancontroller/controller.md)
+  - Pengenalan View
 4. Route & Controller
-   a. Tipe-tipe Route (Web route ,API route & Console route)
-   b. Route Parameter
-   c. Route Berdasarkan Jenis HTTP Method
-   d. Route Group
-   e. Route View
-   f. Controller Resource
-   g. Route Resource
+  - Tipe-tipe Route (Web route ,API route & Console route)
+  - Route Parameter
+  - Route Berdasarkan Jenis HTTP Method
+  - Route Group
+  - Route View
+  - Controller Resource
+  - Route Resource
 5. Database
-   a. Konfigurasi Koneksi database
-   b. [Migration](database/pengantar_migration.md)
-   c. Schema Builder
-   d. Seeding
+  - Konfigurasi Koneksi database
+  - [Migration](database/pengantar_migration.md)
+  - Schema Builder
+  - Seeding
 6. Model & Eloquent
-   a. Model Attribute / properti
-   b. Mass Assignment
-   c. Query Record (Insert,Update,Delete)
-   d. Soft Deletes
-   e. Data Pagination
+  - Model Attribute / properti
+  - Mass Assignment
+  - Query Record (Insert,Update,Delete)
+  - Soft Deletes
+  - Data Pagination
 7. View
-   a. Menampilkan view dari controller
-   b. Menampilkan data ke view
-   c. Control Structure (@IF, @unless, @empty, @auth ,etc)
-   d. Menampilkan Kumpulan Data (@foreach, @forelse, @for, @while , etc) 
-   e. Blade Layout, Section & Component
-      1) @extends
-      2) @yield
-      3) @section
-      4) etc
+  - Menampilkan view dari controller
+  - Menampilkan data ke view
+  - Control Structure (@IF, @unless, @empty, @auth ,etc)
+  - Menampilkan Kumpulan Data (@foreach, @forelse, @for, @while , etc) 
+  - Blade Layout, Section & Component
+      - @extends
+      - @yield
+      - @section
+      - etc
 8. Relationship
-   a. [Pengenalan Relationship](8.Relationship/Pengenalan_relationship.md)
-   b. One-To-One Relationship
-   c. One-To-Many Relationship
-   d. Many-To-Many Relationship
+  - [Pengenalan Relationship](8.Relationship/PengenalanRelationship.md)
+  - One-To-One Relationship
+  - One-To-Many Relationship
+  - Many-To-Many Relationship
 
 ##### B. Project
 
