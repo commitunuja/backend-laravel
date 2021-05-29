@@ -1,2 +1,0 @@
-Laravel Controller merupakan salah satu bagian dimana seluruh fungsional web dibuat. Pada Controller dilakukan pengaturan untuk mengakses Model terkait dengan Database dan juga bagaimana mengirimkan datanya ke View.
- Berbagai pemrosesan juga dilakukan di dalam Controller

@@ -1,1 +1,0 @@
-iini adalah halaman pengantar

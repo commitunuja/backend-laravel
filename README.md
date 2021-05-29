@@ -15,9 +15,9 @@ Focusing on :
 
 1. [Pengenalan Laravel](PengenalanLaravel/Pengenalan.md)
 2. [Instalasi & Konfigurasi](Instalasi&Konfigurasi)
-   - Membuat Project Laravel Baru
-   - Konfigurasi Awal
-   - Variabel Lingkungan (.env)
+  - Membuat Project Laravel Baru
+  - Konfigurasi Awal
+  - Variabel Lingkungan (.env)
 3. Arsitektur Laravel
   - Konsep MVC
   - Pengenalan Routing
@@ -38,23 +38,23 @@ Focusing on :
   - Schema Builder
   - Seeding
 6. Model & Eloquent
-  - Model Attribute / properti
-  - Mass Assignment
-  - Query Record (Insert,Update,Delete)
-  - Soft Deletes
-  - Data Pagination
+  - [Model Attribute / properti](6.Model&Eloquent/a.model_attribute_atau_properti.md)
+  - [Mass Assignment](6.Model&Eloquent/b.mass_assignment.md)
+  - [Query Record (Insert,Update,Delete)](6.Model&Eloquent/c.query_record(insert,update,delete).md)
+  - [Soft Deletes](6.Model&Eloquent/d.soft_deletes.md)
+  - [Data Pagination](6.Model&Eloquent/e.data_pagination.md)
 7. View
-  - Menampilkan view dari controller
-  - Menampilkan data ke view
-  - Control Structure (@IF, @unless, @empty, @auth ,etc)
-  - Menampilkan Kumpulan Data (@foreach, @forelse, @for, @while , etc) 
-  - Blade Layout, Section & Component
+  - [Menampilkan view dari controller](7.View/a.menampilkan_view_dari_controller.md)
+  - [Menampilkan data ke view](7.View/b.menampilkan_data_ke_view.md)
+  - [Control Structure (@IF, @unless, @empty, @auth ,etc)](7.View/c.control_structure.md)
+  - [Menampilkan Kumpulan Data (@foreach, @forelse, @for, @while , etc)](7.View/d.menampilkan_kumpulan_data.md)
+  - [Blade Layout, Section & Component](7.View/e.blade_layout_section_dan_component.md)
       - @extends
       - @yield
       - @section
       - etc
 8. Relationship
-  - [Pengenalan Relationship](8.Relationship/PengenalanRelationship.md)
+  - [Pengenalan Relationship](8.Relationship/a.pengenalan_relationship.md)
   - One-To-One Relationship
   - One-To-Many Relationship
   - Many-To-Many Relationship
