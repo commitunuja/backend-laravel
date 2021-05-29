@@ -22,7 +22,7 @@ Focusing on :
   - Konsep MVC
   - Pengenalan Routing
   - Pengenalan Model
-  - [Pengenalan Controller](pengenalancontroller/controller.md)
+  - Pengenalan Controller
   - Pengenalan View
 4. Route & Controller
   - Tipe-tipe Route (Web route ,API route & Console route)
@@ -34,7 +34,7 @@ Focusing on :
   - Route Resource
 5. Database
   - Konfigurasi Koneksi database
-  - [Migration](database/pengantar_migration.md)
+  - Migration
   - Schema Builder
   - Seeding
 6. Model & Eloquent
