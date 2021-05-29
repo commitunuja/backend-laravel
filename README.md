@@ -54,7 +54,7 @@ Focusing on :
       - @section
       - etc
 8. Relationship
-  - Pengenalan relationship
+  - [Pengenalan relationship](8.Relationship/PengenalanRelationship.md)
   - One-To-One Relationship
   - One-To-Many Relationship
   - Many-To-Many Relationship
