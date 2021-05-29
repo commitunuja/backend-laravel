@@ -14,7 +14,7 @@ Focusing on :
 ##### A. Basic Laravel
 
 1. [Pengenalan Laravel](pengenalanlaravel/pengenalan.md)
-2. Instalasi & Konfigurasi
+2. [Instalasi & Konfigurasi](instalasidankonfigurasi)
    - Membuat Project Laravel Baru
    - Konfigurasi Awal
    - Variabel Lingkungan (.env)
@@ -22,7 +22,7 @@ Focusing on :
   - Konsep MVC
   - Pengenalan Routing
   - Pengenalan Model
-  - [Pengenalan Controller](arsitekturlaravel/pengenalancontroller.md)
+  - [Pengenalan Controller](pengenalancontroller/controller.md)
   - Pengenalan View
 4. Route & Controller
   - Tipe-tipe Route (Web route ,API route & Console route)
@@ -34,7 +34,7 @@ Focusing on :
   - Route Resource
 5. Database
   - Konfigurasi Koneksi database
-  - [Migration](migration/pengantar.md)
+  - [Migration](database/pengantar_migration.md)
   - Schema Builder
   - Seeding
 6. Model & Eloquent
