@@ -9,7 +9,7 @@ Berikut ini adalah contoh bagaimana menyimpan data menggunakan Mass Assignment.
 $user = new User([
     'name' => 'Alfa Adhitya',
     'email' => 'email@domain.com'
-]);
+    ]);
 $user->save();
 
 Selain menggunakan kode seperti diatas, kita juga bisa mempersingkat proses diatas dengan menggunakan method create dari Laravel.
