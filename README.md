@@ -33,10 +33,10 @@ Focusing on :
   - Controller Resource
   - Route Resource
 5. Database
-  - Konfigurasi Koneksi database
-  - Migration
-  - Schema Builder
-  - Seeding
+  - [Konfigurasi Koneksi database](5.Database/a.konvigurasi_koneksi_database)
+  - [Migration](5.Database/b.migration)
+  - [Schema Builder](5.Database/c.schema_builder)
+  - [Seeding](5.Database/d.seeding)
 6. Model & Eloquent
   - [Model Attribute / properti](6.Model&Eloquent/a.model_attribute_atau_properti.md)
   - [Mass Assignment](6.Model&Eloquent/b.mass_assignment.md)
