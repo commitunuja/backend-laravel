@@ -6,24 +6,27 @@ Ketika menginisialisasi sebuah model, kita bisa mengirimkan attribute-attribute 
 
 Berikut ini adalah contoh bagaimana menyimpan data menggunakan Mass Assignment.
 
+```java
 $user = new User([
-    'name' => 'Alfa Adhitya',
+    'name' => 'Diyah Ayu A',
     'email' => 'email@domain.com'
     ]);
 $user->save();
+```
 
 Selain menggunakan kode seperti diatas, kita juga bisa mempersingkat proses diatas dengan menggunakan method create dari Laravel.
-
+```java
 User::create([
-    'name' => 'Alfa Adhitya',
+    'name' => 'Diyah Ayu A',
     'email' => 'email@domain.com'
 ]);User::create([
-    'name' => 'Alfa Adhitya',
+    'name' => 'Diyah Ayu A',
     'email' => 'email@domain.com'
 ]);
+```
 
-Agar bisa menggunakan fitur Mass Assignment, kita perlu mengatur property $fillable atau $guarded pada model. Property $fillable digunakan untuk mendefinisikan attribute mana saja yang diizinkan untuk di assign menggunakan Mass Assignment, sementara property $guarded untuk mendefinisikan attribute mana saja yang tidak diizinkan untuk di assign menggunakan Mass Assignment.
-
+Agar bisa menggunakan fitur Mass Assignment, kita perlu mengatur property **$fillable** atau **$guarded** pada model. Property **$fillable** digunakan untuk mendefinisikan attribute mana saja yang diizinkan untuk di assign menggunakan Mass Assignment, sementara property **$guarded** untuk mendefinisikan attribute mana saja yang tidak diizinkan untuk di assign menggunakan Mass Assignment.
+```java
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
@@ -42,15 +45,15 @@ class User extends Model
 
     //
 }
-
+```
 ### Fillable vs Guarded
 
-Gunakan property $fillable jika jumlah kolom yang diizinkan untuk di assign menggunakan Mass Assignment lebih sedikit dibandingkan dengan yang tidak diizinkan. Sebaliknya gunakan property $guarded jika jumlah kolom yang diizinkan untuk di assign menggunakan Mass Assignment lebih banyak.
+Gunakan property **$fillable** jika jumlah kolom yang diizinkan untuk di assign menggunakan Mass Assignment lebih sedikit dibandingkan dengan yang tidak diizinkan. Sebaliknya gunakan property **$guarded** jika jumlah kolom yang diizinkan untuk di assign menggunakan Mass Assignment lebih banyak.
 
 Contoh :
 
-kita memiliki sebuah table dengan 15 kolom, 12 diantaranya diizinkan untuk di assign menggunakan Mass Assignment. Pada kasus ini, karena jumlah kolom yang diizinkan untuk di assign menggunakan Mass Assignment lebih banyak dari yang tidak diizinkan, kita bisa menggunakan property $guarded untuk kasus ini.
-
+kita memiliki sebuah table dengan 15 kolom, 12 diantaranya diizinkan untuk di assign menggunakan Mass Assignment. Pada kasus ini, karena jumlah kolom yang diizinkan untuk di assign menggunakan Mass Assignment lebih banyak dari yang tidak diizinkan, kita bisa menggunakan property **$guarded** untuk kasus ini.
+```java
 class User extends Model
 {
     protected $guarded = [
@@ -60,9 +63,10 @@ class User extends Model
     ];
     //
 }
+```
 
-Bayangkan jika kita menggunakan property $fillable untuk kasus diatas. Akan sangat banyak attribute yang harus kita definisikan disini.
-
+Bayangkan jika kita menggunakan property **$fillable** untuk kasus diatas. Akan sangat banyak attribute yang harus kita definisikan disini.
+```java
 class User extends Model
 {
     protected $fillable = [
@@ -75,6 +79,7 @@ class User extends Model
     ];
     //
 }
+```
 
 ### Keuntungan Mass Assignment
 
@@ -85,7 +90,7 @@ Memang kode diatas tidak terlihat memiliki perbedaan yang signifikan, tapi bayan
 Sekarang mari kita lihat perbedaan keduanya ketika kita menyimpan data melalui Form HTML.
 
 Contoh cara menyimpan data dari Form HTML tanpa menggunakan Mass Assignment.
-
+```java
 public function store(Request $request)
 {
     $user = new User();
@@ -99,10 +104,12 @@ public function store(Request $request)
     $user->save();
     //
 }
+```
 
 Dengan menggunakan Mass Assignment, proses menyimpan data akan terlihat seperti ini.
-
+```java
 public function store(Request $request)
 {
     User::create($request->all());
 }
+```
