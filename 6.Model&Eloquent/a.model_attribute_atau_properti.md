@@ -6,7 +6,9 @@ Laravel menyertakan Eloquent, sebuah object-relational mapper (ORM) yang membuat
 
 Model biasanya tinggal di app\Modelsdirektori dan memperluas Illuminate\Database\Eloquent\Modelkelas. Anda dapat menggunakan make:model perintah Artisan untuk menghasilkan model baru:
 
-'''php artisan make:model Flight'''
+'''java 
+php artisan make:model Flight
+'''
 
 Ada 10 magic property yang dapat kita gunakan :
 
