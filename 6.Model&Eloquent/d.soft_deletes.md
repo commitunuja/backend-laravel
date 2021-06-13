@@ -44,7 +44,7 @@ if ($flight->trashed()) {
 }
 ```
 
-###Including Soft Deleted Models
+### Including Soft Deleted Models
 
 Seperti disebutkan di atas, model yang dihapus sementara akan secara otomatis dikeluarkan dari hasil queri. Namun, Anda dapat memaksa model yang dihapus sementara untuk muncul di kumpulan hasil menggunakan **withTrashed** metode pada queri:
 
