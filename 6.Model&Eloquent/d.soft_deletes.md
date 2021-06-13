@@ -60,7 +60,7 @@ Di **withTrashed** Metode ini juga dapat digunakan pada hubungan query:
 $flight->history()->withTrashed()->get();
 ```
 
-###Retrieving Only Soft Deleted Models
+### Retrieving Only Soft Deleted Models
 
 **onlyTrashed** Metode akan mengambil hanya soft deletes:
 
@@ -70,7 +70,7 @@ $flights = App\Flight::onlyTrashed()
                 ->get();
 ```
 
-###Restoring Soft Deleted Models
+### Restoring Soft Deleted Models
 
 Untuk memulihkan model yang dihapus sementara ke status aktif, gunakan **restore** metode pada instance model:
 
