@@ -44,11 +44,10 @@ Focusing on :
   - [Soft Deletes](6.Model&Eloquent/d.soft_deletes.md)
   - [Data Pagination](6.Model&Eloquent/e.data_pagination.md)
 7. View
-  - [Menampilkan view dari controller](7.View/a.menampilkan_view_dari_controller.md)
-  - [Menampilkan data ke view](7.View/b.menampilkan_data_ke_view.md)
-  - [Control Structure (@IF, @unless, @empty, @auth ,etc)](7.View/c.control_structure.md)
-  - [Menampilkan Kumpulan Data (@foreach, @forelse, @for, @while , etc)](7.View/d.menampilkan_kumpulan_data.md)
-  - [Blade Layout, Section & Component](7.View/e.blade_layout_section_dan_component.md)
+  - [Views](7.View/a.views.md)
+  - [Control Structure (@IF, @unless, @empty, @auth ,etc)](7.View/b.control_structure.md)
+  - [Menampilkan Kumpulan Data (@foreach, @forelse, @for, @while , etc)](7.View/c.menampilkan_kumpulan_data.md)
+  - [Blade Layout, Section & Component](7.View/d.blade_layout_section_dan_component.md)
       - @extends
       - @yield
       - @section
