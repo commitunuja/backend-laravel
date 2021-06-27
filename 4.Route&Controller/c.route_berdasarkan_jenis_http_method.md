@@ -1,8 +1,7 @@
-Router Methods
+###Router Methods
 Seperti yang telah dibahas sebelumnya bahwa router juga memilah request berdasarkan HTTP method, sehingga kita bisa mendefinisikan sebuah route untuk merespon HTTP verb.
 
-
- 
+```java
 Route::get($uri, $callback);
 Route::post($uri, $callback);
 Route::put($uri, $callback);
@@ -14,6 +13,7 @@ Untuk beberapa kasus kita mungkin perlu untuk mendaftarkan sebuah route untuk me
 Route::match(['get', 'post'], 'blog', function () {
     return 'Ini halaman blog';
 });
+```
 Untuk mencoba method POST kita bisa menggunakan Postman.
 
 

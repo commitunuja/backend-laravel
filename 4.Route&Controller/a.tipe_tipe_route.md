@@ -1,9 +1,11 @@
+###PEGANTAR
 Pada Laravel Framework kita memiliki beberapa route, antara lain :
-
+---
 API
 Web
 Channels
 Console
+
 Di antara 4 Route di atas yang paling sering kita gunakan adalah Route API & Route Web.
 
 Definisi Route Web ini Terletak Di Folder routes\web.php dan untuk file Route API Terletak Di Folder routes\api.php
@@ -15,7 +17,7 @@ Route POST
 Route PUT
 Route DELETE
 Contoh Penulisan Route GET:
-
+```java
 Route::get('/customer', function () {    
     return dd('ini halaman customer');
 });
@@ -42,4 +44,4 @@ Route::group(['prefix'=>'/customer'], function () {
     });
 
 });
-
+```

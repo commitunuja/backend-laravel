@@ -1,7 +1,8 @@
-#Perutean Dasar
+###Perutean Dasar
 Anda akan menentukan sebagian besar rute untuk aplikasi Anda dalam app/Http/routes.phpfile, yang dimuat oleh App\Providers\RouteServiceProviderkelas. Rute Laravel paling dasar hanya menerima URI dan Closure:
 
 Rute GET Dasar
+```java
 Route::get('/', function()
 {
     return 'Hello World';
@@ -34,6 +35,7 @@ Route::any('foo', function()
 Seringkali, Anda perlu membuat URL ke rute Anda, Anda dapat melakukannya menggunakan urlhelper:
 
 $url = url('foo')
+```
 ----
 #Perlindungan CSRF
 Laravel memudahkan untuk melindungi aplikasi Anda dari pemalsuan permintaan lintas situs . Pemalsuan permintaan lintas situs adalah jenis eksploitasi berbahaya di mana perintah yang tidak sah dilakukan atas nama pengguna yang diautentikasi.
@@ -41,15 +43,19 @@ Laravel memudahkan untuk melindungi aplikasi Anda dari pemalsuan permintaan lint
 Laravel secara otomatis menghasilkan "token" CSRF untuk setiap sesi pengguna aktif yang dikelola oleh aplikasi. Token ini digunakan untuk memverifikasi bahwa pengguna yang diautentikasi adalah orang yang benar-benar membuat permintaan ke aplikasi.
 
 Masukkan Token CSRF Ke Dalam Formulir
+```java
 <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
 Tentu saja, menggunakan mesin templating Blade :
+```
 
+```java
 <input type="hidden" name="_token" value="{{ csrf_token() }}">
 Anda tidak perlu memverifikasi token CSRF secara manual pada permintaan POST, PUT, atau DELETE. The VerifyCsrfToken HTTP middleware akan memverifikasi token input permintaan cocok token disimpan dalam sesi.
-
+```
 X-CSRF-TOKEN
 Selain mencari token CSRF sebagai parameter "POST", middleware juga akan memeriksa X-CSRF-TOKENheader permintaan. Anda dapat, misalnya, menyimpan token dalam tag "meta" dan menginstruksikan jQuery untuk menambahkannya ke semua header permintaan:
 
+```java
 <meta name="csrf-token" content="{{ csrf_token() }}" />
 
 $.ajaxSetup({
@@ -62,6 +68,8 @@ Sekarang semua permintaan AJAX akan secara otomatis menyertakan token CSRF:
 $.ajax({
    url: "/foo/bar",
 })
+```
+---
 X-XSRF-TOKEN
 Laravel juga menyimpan token CSRF dalam XSRF-TOKENcookie. Anda dapat menggunakan nilai cookie untuk mengatur X-XSRF-TOKENheader permintaan. Beberapa kerangka kerja JavaScript, seperti Angular, melakukan ini secara otomatis untuk Anda.
 
@@ -71,16 +79,18 @@ Catatan: Perbedaan antara X-CSRF-TOKENdan X-XSRF-TOKENadalah bahwa yang pertama 
 Formulir HTML tidak mendukung PUT, PATCHatau DELETEtindakan. Jadi, saat mendefinisikan PUT, PATCHatau DELETErute yang dipanggil dari formulir HTML, Anda perlu menambahkan _methodbidang tersembunyi ke formulir.
 
 Nilai yang dikirim dengan _methodbidang akan digunakan sebagai metode permintaan HTTP. Sebagai contoh:
-
+```java
 <form action="/foo/bar" method="POST">
     <input type="hidden" name="_method" value="PUT">
     <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
 </form>
+```
 
 #Parameter Rute
 Tentu saja, Anda dapat menangkap segmen URI permintaan dalam rute Anda:
 
 Parameter Rute Dasar
+```java
 Route::get('user/{id}', function($id)
 {
     return 'User '.$id;
@@ -115,9 +125,11 @@ Route::get('user/{id}/{name}', function($id, $name)
     //
 })
 ->where(['id' => '[0-9]+', 'name' => '[a-z]+']);
+```
 Mendefinisikan Pola Global
 Jika Anda ingin parameter rute selalu dibatasi oleh ekspresi reguler yang diberikan, Anda dapat menggunakan patternmetode ini. Anda harus mendefinisikan pola-pola ini dalam bootmetode Anda RouteServiceProvider:
 
+```java
 $router->pattern('id', '[0-9]+');
 Setelah pola ditentukan, itu diterapkan ke semua rute menggunakan parameter itu:
 
@@ -132,8 +144,11 @@ if ($route->input('id') == 1)
 {
     //
 }
+```
+---
 Anda juga dapat mengakses parameter rute saat ini melalui Illuminate\Http\Requestinstans. Contoh permintaan untuk permintaan saat ini dapat diakses melalui Requestfasad, atau dengan mengetikkan petunjuk di Illuminate\Http\Requestmana dependensi disuntikkan:
 
+```java
 use Illuminate\Http\Request;
 
 Route::get('user/{id}', function(Request $request, $id)
@@ -143,9 +158,11 @@ Route::get('user/{id}', function(Request $request, $id)
         //
     }
 });
+```
 #Rute Bernama
 Rute bernama memungkinkan Anda menghasilkan URL atau pengalihan untuk rute tertentu dengan mudah. Anda dapat menentukan nama untuk rute dengan askunci array:
 
+```java
 Route::get('user/profile', ['as' => 'profile', function()
 {
     //
@@ -163,6 +180,7 @@ $redirect = redirect()->route('profile');
 The currentRouteNameMetode mengembalikan nama dari rute penanganan permintaan saat ini:
 
 $name = Route::currentRouteName();
+```
 
 #Grup Rute
 Terkadang banyak rute Anda akan berbagi persyaratan umum seperti segmen URL, middleware, namespace, dll. Daripada menentukan setiap opsi ini pada setiap rute secara individual, Anda dapat menggunakan grup rute untuk menerapkan atribut ke banyak rute.
@@ -172,6 +190,7 @@ Atribut bersama ditentukan dalam format array sebagai parameter pertama Route::g
 #Middleware
 Middleware diterapkan ke semua rute dalam grup dengan mendefinisikan daftar middleware dengan middlewareparameter pada larik atribut grup. Middleware akan dieksekusi sesuai urutan Anda mendefinisikan array ini:
 
+```java
 Route::group(['middleware' => ['foo', 'bar']], function()
 {
     Route::get('/', function()
@@ -185,10 +204,12 @@ Route::group(['middleware' => ['foo', 'bar']], function()
     });
 
 });
+```
 
 #Ruang nama
 Anda dapat menggunakan namespaceparameter dalam larik atribut grup Anda untuk menentukan namespace untuk semua pengontrol dalam grup:
 
+```java
 Route::group(['namespace' => 'Admin'], function()
 {
     // Controllers Within The "App\Http\Controllers\Admin" Namespace
@@ -198,11 +219,13 @@ Route::group(['namespace' => 'Admin'], function()
         // Controllers Within The "App\Http\Controllers\Admin\User" Namespace
     });
 });
+```
 Catatan: Secara default, RouteServiceProvidermenyertakan routes.phpfile Anda dalam grup namespace, memungkinkan Anda untuk mendaftarkan rute pengontrol tanpa menentukan App\Http\Controllersawalan namespace lengkap 
 #Perutean Sub-Domain
 Rute Laravel juga menangani sub-domain wildcard, dan akan meneruskan parameter wildcard Anda dari domain:
 
-Mendaftarkan Rute Sub-Domain
+Mendaftarkan Rute Sub-Domain'
+```java
 Route::group(['domain' => '{account}.myapp.com'], function()
 {
 
@@ -212,10 +235,12 @@ Route::group(['domain' => '{account}.myapp.com'], function()
     });
 
 });
+```
 
 #Awalan Rute
 Sekelompok rute dapat diawali dengan menggunakan prefixopsi dalam larik atribut grup:
 
+```java
 Route::group(['prefix' => 'admin'], function()
 {
     Route::get('users', function()
@@ -223,8 +248,10 @@ Route::group(['prefix' => 'admin'], function()
         // Matches The "/admin/users" URL
     });
 });
+```
 Anda juga dapat menggunakan prefixparameter untuk meneruskan parameter umum ke rute Anda:
 Mendaftarkan parameter URL di awalan rute
+```java
 Route::group(['prefix' => 'accounts/{account_id}'], function()
 {
     Route::get('detail', function($account_id)
@@ -241,6 +268,7 @@ Route::group([
 
     // Define Routes Here
 });
+```
 ----
 #Pengikatan Model Rute
 Pengikatan model Laravel menyediakan cara mudah untuk menyuntikkan instance kelas ke dalam rute Anda. Misalnya, alih-alih menyuntikkan ID pengguna, Anda dapat menyuntikkan seluruh instance kelas Pengguna yang cocok dengan ID yang diberikan.
@@ -248,6 +276,7 @@ Pengikatan model Laravel menyediakan cara mudah untuk menyuntikkan instance kela
 Pertama, gunakan metode router modeluntuk menentukan kelas untuk parameter yang diberikan. Anda harus mendefinisikan binding model Anda dalam RouteServiceProvider::bootmetode:
 
 Mengikat Parameter Ke Model
+```java
 public function boot(Router $router)
 {
     parent::boot($router);
@@ -260,23 +289,26 @@ Route::get('profile/{user}', function(App\User $user)
 {
     //
 });
+```
 Karena kita telah mengikat {user}parameter ke App\Usermodel, sebuah Userinstance akan disuntikkan ke dalam rute. Jadi, misalnya, permintaan untuk profile/1akan menyuntikkan Userinstance yang memiliki ID 1.
 
 Catatan: Jika contoh model yang cocok tidak ditemukan dalam database, kesalahan 404 akan muncul.
 
 Jika Anda ingin menentukan perilaku "tidak ditemukan" Anda sendiri, berikan Penutupan sebagai argumen ketiga ke modelmetode:
-
+```java
 Route::model('user', 'User', function()
 {
     throw new NotFoundHttpException;
 });
-Jika Anda ingin menggunakan logika resolusi Anda sendiri, Anda harus menggunakan Route::bindmetode ini. Penutupan yang Anda berikan ke bindmetode akan menerima nilai segmen URI, dan harus mengembalikan instance kelas yang ingin Anda masukkan ke dalam rute:
+```
 
+Jika Anda ingin menggunakan logika resolusi Anda sendiri, Anda harus menggunakan Route::bindmetode ini. Penutupan yang Anda berikan ke bindmetode akan menerima nilai segmen URI, dan harus mengembalikan instance kelas yang ingin Anda masukkan ke dalam rute:
+```java
 Route::bind('user', function($value)
 {
     return User::where('name', $value)->first();
 });
-
+```
 #Melempar 404 Kesalahan
 Ada dua cara untuk memicu kesalahan 404 secara manual dari suatu rute. Pertama, Anda dapat menggunakan abortpembantu:
 

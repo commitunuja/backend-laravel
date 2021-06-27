@@ -177,10 +177,11 @@ class UserController extends Controller
     }
 }
 Tentu saja, Anda juga dapat mengetik-petunjuk kontrak Laravel apa pun . Jika wadah dapat menyelesaikannya, Anda dapat mengetik-petunjuknya.
-
+#Pengantar
 Metode Injeksi
 Selain injeksi konstruktor, Anda juga dapat mengetikkan dependensi petunjuk pada metode tindakan pengontrol Anda. Sebagai contoh, mari kita ketik-petunjuk Illuminate\Http\Requestpada salah satu metode kita:
 
+```java
 <?php
 
 namespace App\Http\Controllers;
@@ -202,11 +203,13 @@ class UserController extends Controller
         //
     }
 }
+```
 Jika metode pengontrol Anda juga mengharapkan input dari parameter rute, cukup cantumkan argumen rute Anda setelah dependensi Anda yang lain. Misalnya, jika rute Anda didefinisikan seperti ini:
-
+```java
 Route::put('user/{id}', 'UserController@update');
+```
 Anda masih dapat mengetik-petunjuk Illuminate\Http\Requestdan mengakses parameter rute Anda iddengan mendefinisikan metode pengontrol Anda seperti berikut:
-
+```java
 <?php
 
 namespace App\Http\Controllers;
@@ -227,7 +230,7 @@ class UserController extends Controller
         //
     }
 }
-----
+```----
 #Caching Rute
 Catatan: Caching rute tidak berfungsi dengan rute berbasis Penutupan. Untuk menggunakan cache rute, Anda harus mengonversi rute Penutupan apa pun untuk menggunakan kelas pengontrol.
 
@@ -237,5 +240,6 @@ php artisan route:cache
 Itu saja! File rute cache Anda sekarang akan digunakan sebagai ganti app/Http/routes.phpfile Anda . Ingat, jika Anda menambahkan rute baru, Anda perlu membuat cache rute baru. Karena itu, Anda hanya boleh menjalankan route:cacheperintah selama penerapan proyek Anda.
 
 Untuk menghapus file rute yang di-cache tanpa membuat cache baru, gunakan route:clearperintah:
-
+```java
 php artisan route:clear
+```
