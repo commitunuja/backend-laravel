@@ -17,4 +17,4 @@ Bagian ketujuh digunakan untuk mengatur setelan dari penyimpanan pada server AWS
 Bagian terakhir berurusan dengan pusher yang biasa digunakan untuk aplikasi realtime. 
 Sekian penjelasan singkat tentang variabel yang ada di dalam file ".env".
 
-
+kjdhjkhdjkhaju
