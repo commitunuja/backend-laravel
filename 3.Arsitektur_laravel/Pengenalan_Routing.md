@@ -1,5 +1,6 @@
 PENGENALAN ROUTING
 Routing digunakan untuk mengatur URL atau alamat yang bisa diakses oleh pengguna ,serta menentukan halaman mana yang akan dibuka ketika pengguna aplikasi mengakses URI(Uniform Resorce Indentifier) tertentu.
+
 				 
 Didalam folder Route ,terdapat 4 file yaitu : api.php, channels.php, console.php, web.php . masing masing file digunakan untuk mengatur proses Routing,tetapi memiliki fungsi yang berbeda,yaitu:
 •	api.php : File ini digunakan untuk membuat routing API., di dalam file ini kita juga dapat membuat core service API dengan menggunakan Laravel.
