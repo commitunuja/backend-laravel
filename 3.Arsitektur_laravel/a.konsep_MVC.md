@@ -10,6 +10,8 @@ Dengan menggunakan metode MVC pembuatan perangkat lunak akan menjadi lebih mudah
 Apa itu Modeling, View dan Controller ?
  
 •	Model : Mungkin dari kalian sudah tau apa itu Model. Model adalah struktur data jika didalam laravel biasanya disebut Eloquent. Model berisi fungsi-fungsi yang membantu dalam mengelola database seperti memasukkan data, pembaruan data, hapus data dan lainnya.
+
 •	View :View adalah bagian yang mengatur tampilan antarmuka kepada pengguna. Bisa dikatakan sebagai halaman web.
+
 •	Controller : Controller adalah bagian yang menghubungkan antara model dengan view. Jika kalian pernah mempelajar (if) (then) dan (else), percayalah ilmu itu sangat amat berguna di controller. Biasanya controller berisi logika-logika untuk memproses data yang akan ditampilkan.
  
