@@ -1,36 +1,37 @@
 # membuat project
 Software Pendukung
-Untuk kebutuhan belajar ,andamemerlukan software sebagai berikut:
-1.Xampp/Wampp/Lampp (disarankan support PHP 7.2.0
-Download Xampp di https://www.apachefriends.org/index.html
-2.Composer
-Download Composer di https://code.visualstudio.com/
-3.Text Editor (Visual Studio Code)
-Download Visual Studio code di https://getcomposer.org/download/
-PENGINSTALAN FRAMEWORK LARAVEL	
--Buka Command Prompt
--Masuk terlebih dahulu kedalam folder htdocs pada Xampp
+--------------------
+
+	Untuk kebutuhan belajar ,anda memerlukan software sebagai berikut:
+1. Xampp/Wampp/Lampp (disarankan support PHP 7.2.0
+   [Download Xampp di ](https://www.apachefriends.org/index.html)
+2. Composer
+   [Download Composer di](https://code.visualstudio.com/)
+3. Text Editor (Visual Studio Code)
+   [Download Visual Studio code di](https://getcomposer.org/download/)
+
+## PENGINSTALAN FRAMEWORK LARAVEL	
+- Buka Command Prompt
+- Masuk terlebih dahulu kedalam folder htdocs pada Xampp	 
+- [Buka website Laravel di](https://laravel.com/docs) disini sudah tersedia semua langkah-langkah instalasi Laravel berbagai versi .
+- Pilih Instalasi via composer create-project
+- Masukkan command diatas ke terminal anda
 	 
--Buka halaman https://laravel.com/docsdisini sudah tersedia semua langkah-langkah instalasi Laravel berbagai versi .
--Pilih Instalasi via composer create-project
+- Pastikan PC anda telah terhubung ke internet saat proses Instalasi berlangsung
+- Tunggu hingga Instalasi selesai
+- Setelah Instalasi selesai ,kita akan meng-akses project yang telah dibuat.
+- Pastikan actions sekaligus service Apache dan Mysql dalam Xampp sudah dalam keadaan start 
+- Selanjutnya ,kita dapat meng-aksesnya di Google dengan menuliskan “localhost/kampusmerdeka/public” lalu tekan enter
+- jika muncul halaman seperti berikut,maka Instalasi project anda berhasil.
 	 
--Masukkan command diatas ke terminal anda
-	 
--Pastikan PC anda telah terhubung ke internet saat proses Instalasi berlangsung
--Tunggu hingga Instalasi selesai
--Setelah Instalasi selesai ,kita akan meng-akses project yang telah dibuat.
--Pastikan actions sekaligus service Apache dan Mysql dalam Xampp sudah dalam keadaan start 
--Selanjutnya ,kita dapat meng-aksesnya di Google dengan menuliskan “localhost/kampusmerdeka/public” lalu tekan enter
--jika muncul halaman seperti berikut,maka Instalasi project anda berhasil.
-	 
--Selain mengakses Laravel dengan localhost,cara kedua untuk mengakses project Laravel anda adalah dengan menggunakan perintah “php artisan”.
+- Selain mengakses Laravel dengan localhost,cara kedua untuk mengakses project Laravel anda adalah dengan menggunakan perintah “php artisan”.
 - buka command prompt anda,masuk ke dalam folder project yaitu “kampusmerdeka”
--lalu tuliskan perintah “php artisan serve” seperti gambar dibawah ini:
+- lalu tuliskan perintah “php artisan serve” seperti gambar dibawah ini:
 	 
--jalankan server tersebut
+- jalankan server tersebut
 - jika muncul halaman seperti berikut ,maka Instalasi project anda berhasil.
 	 
-Struktur laravel
+### Struktur laravel
 Berikut adalah beberapa struktur dari laravel :
 •	App
 Berisi kumpulan logika dan alur sistem yang akan dibuat.
