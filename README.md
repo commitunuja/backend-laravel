@@ -15,7 +15,7 @@ Focusing on :
 
 1. [Pengenalan Laravel](PengenalanLaravel/Pengenalan.md)
 2. [Instalasi & Konfigurasi](Instalasi&Konfigurasi)
-  - [Membuat Project Laravel Baru](2.Instalasi&Konfigurasi/a.membuat_project_laravel_baru,md)
+  - [Membuat Project Laravel Baru](2.Instalasi&Konfigurasi/a.membuat_project_laravel_baru.md)
   - [Konfigurasi Awal](2.Instalasi&Konfigurasi/b.konfigurasi_awal.md)
   - [Variabel Lingkungan](2.Instalasi&Konfigurasi/c.variabel_lingkungan.md) (.env)
 3. Arsitektur Laravel
