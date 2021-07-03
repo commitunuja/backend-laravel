@@ -15,15 +15,15 @@ Focusing on :
 
 1. [Pengenalan Laravel](PengenalanLaravel/Pengenalan.md)
 2. [Instalasi & Konfigurasi](Instalasi&Konfigurasi)
-  - Membuat Project Laravel Baru
-  - Konfigurasi Awal
-  - Variabel Lingkungan (.env)
+  - [Membuat Project Laravel Baru](2.Instalasi&Konfigurasi/a.membuat_project_laravel_baru,md)
+  - [Konfigurasi Awal](2.Instalasi&Konfigurasi/b.konfigurasi_awal.md)
+  - [Variabel Lingkungan](2.Instalasi&Konfigurasi/c.variabel_lingkungan.md) (.env)
 3. Arsitektur Laravel
-  - Konsep MVC
-  - Pengenalan Routing
-  - Pengenalan Model
-  - Pengenalan Controller
-  - Pengenalan View
+  - [Konsep MVC](3.ArsitekturLaravel/a.konsep_MVC.md)
+  - [Pengenalan Routing](3.ArsitekturLaravel/b.pengenalan_routing.md)
+  - [Pengenalan Model](ArsitekturLaravel/c.pengenalan_model.md)
+  - [Pengenalan Controller](ArsitekturLaravel/d.pengenalan_controller.md)
+  - [Pengenalan View](ArsitekturLaravel/e.pengenalan_view/md)
 4. Route & Controller
   - [Tipe-tipe Route](4.Route&Controller/a.tipe_tipe_route.md)
   - [Route Parameter](4.Route&Controller/b.route_parameter.md)
