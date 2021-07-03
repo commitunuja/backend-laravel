@@ -25,18 +25,18 @@ Focusing on :
   - Pengenalan Controller
   - Pengenalan View
 4. Route & Controller
-  - Tipe-tipe Route (Web route ,API route & Console route)
-  - Route Parameter
-  - Route Berdasarkan Jenis HTTP Method
-  - Route Group
-  - Route View
-  - Controller Resource
-  - Route Resource
+  - [Tipe-tipe Route](4.Route&Controller/a.tipe_tipe_route.md)
+  - [Route Parameter](4.Route&Controller/b.route_parameter.md)
+  - [Route Berdasarkan Jenis HTTP Method](4.Route&Controller/c.route_berdasarkan_jenis_http_methods.md)
+  - [Route Group](4.Route&Controller/d.route_group.md)
+  - [Route View](4.Route&Controller/e.route_view.md)
+  - [Controller Resource](4.Route&Controller/f.controller_resource.md)
+  - [Route Resource](4.Route&Controller/g.route_resource.md)
 5. Database
   - [Konfigurasi Koneksi database](5.Database/a.konvigurasi_koneksi_database.md)
-  - [Migration](5.Database/b.migration)
-  - [Schema Builder](5.Database/c.schema_builder)
-  - [Seeding](5.Database/d.seeding)
+  - [Migration](5.Database/b.migration.md)
+  - [Schema Builder](5.Database/c.schema_builder.md)
+  - [Seeding](5.Database/d.seeding.md)
 6. Model & Eloquent
   - [Model Attribute / properti](6.Model&Eloquent/a.model_attribute_atau_properti.md)
   - [Mass Assignment](6.Model&Eloquent/b.mass_assignment.md)
