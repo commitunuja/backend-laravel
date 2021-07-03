@@ -20,10 +20,10 @@ Focusing on :
   - [Variabel Lingkungan](2.Instalasi&Konfigurasi/c.variabel_lingkungan.md) (.env)
 3. Arsitektur Laravel
   - [Konsep MVC](3.Arsitektur_laravel/a.konsep_MVC.md)
-  - [Pengenalan Controller](Arsitektur_laravel/b.pengenalan_controller.md)
-  - [Pengenalan Model](Arsitektur_laravel/c.pengenalan_model.md)
-  - [Pengenalan Routing](3.Arsitektur_laravel/d.pengenalan_routing.md)
-  - [Pengenalan View](Arsitektur_laravel/e.pengenalan_view.md)
+  - [Pengenalan Controller](3.Arsitektur_laravel/b.Pengenalan_Controller.md)
+  - [Pengenalan Model](3.Arsitektur_laravel/c.Pengenalan_Model.md)
+  - [Pengenalan Routing](3.Arsitektur_laravel/d.Pengenalan_Routing.md)
+  - [Pengenalan View](3.Arsitektur_laravel/e.Pengenalan_View.md)
 4. Route & Controller
   - [Tipe-tipe Route](4.Route&Controller/a.tipe_tipe_route.md)
   - [Route Parameter](4.Route&Controller/b.route_parameter.md)
