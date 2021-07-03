@@ -27,7 +27,7 @@ Focusing on :
 4. Route & Controller
   - [Tipe-tipe Route](4.Route&Controller/a.tipe_tipe_route.md)
   - [Route Parameter](4.Route&Controller/b.route_parameter.md)
-  - [Route Berdasarkan Jenis HTTP Method](4.Route&Controller/c.route_berdasarkan_jenis_http_methods.md)
+  - [Route Berdasarkan Jenis HTTP Method](4.Route&Controller/c.route_berdasarkan_jenis_http_method.md)
   - [Route Group](4.Route&Controller/d.route_group.md)
   - [Route View](4.Route&Controller/e.route_view.md)
   - [Controller Resource](4.Route&Controller/f.controller_resource.md)
