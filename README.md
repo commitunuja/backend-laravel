@@ -33,7 +33,7 @@ Focusing on :
   - Controller Resource
   - Route Resource
 5. Database
-  - [Konfigurasi Koneksi database](5.Database/a.konvigurasi_koneksi_database)
+  - [Konfigurasi Koneksi database](5.Database/a.konvigurasi_koneksi_database.md)
   - [Migration](5.Database/b.migration)
   - [Schema Builder](5.Database/c.schema_builder)
   - [Seeding](5.Database/d.seeding)
