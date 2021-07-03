@@ -1,10 +1,14 @@
-###PEGANTAR
-Pada Laravel Framework kita memiliki beberapa route, antara lain :
+# PEGANTAR
+## Pada Laravel Framework kita memiliki beberapa route, antara lain :
 ---
-API
-Web
-Channels
-Console
+**API**
+
+**Web**
+
+**Channels**
+
+**Console**
+
 
 Di antara 4 Route di atas yang paling sering kita gunakan adalah Route API & Route Web.
 

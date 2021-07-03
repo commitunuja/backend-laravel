@@ -1,4 +1,4 @@
-###Perutean Dasar
+### Perutean Dasar
 Anda akan menentukan sebagian besar rute untuk aplikasi Anda dalam app/Http/routes.phpfile, yang dimuat oleh App\Providers\RouteServiceProviderkelas. Rute Laravel paling dasar hanya menerima URI dan Closure:
 
 Rute GET Dasar
@@ -86,7 +86,7 @@ Nilai yang dikirim dengan _methodbidang akan digunakan sebagai metode permintaan
 </form>
 ```
 
-#Parameter Rute
+# Parameter Rute
 Tentu saja, Anda dapat menangkap segmen URI permintaan dalam rute Anda:
 
 Parameter Rute Dasar
@@ -126,7 +126,7 @@ Route::get('user/{id}/{name}', function($id, $name)
 })
 ->where(['id' => '[0-9]+', 'name' => '[a-z]+']);
 ```
-Mendefinisikan Pola Global
+### Mendefinisikan Pola Global
 Jika Anda ingin parameter rute selalu dibatasi oleh ekspresi reguler yang diberikan, Anda dapat menggunakan patternmetode ini. Anda harus mendefinisikan pola-pola ini dalam bootmetode Anda RouteServiceProvider:
 
 ```java
@@ -159,7 +159,7 @@ Route::get('user/{id}', function(Request $request, $id)
     }
 });
 ```
-#Rute Bernama
+### Rute Bernama
 Rute bernama memungkinkan Anda menghasilkan URL atau pengalihan untuk rute tertentu dengan mudah. Anda dapat menentukan nama untuk rute dengan askunci array:
 
 ```java
@@ -182,12 +182,12 @@ The currentRouteNameMetode mengembalikan nama dari rute penanganan permintaan sa
 $name = Route::currentRouteName();
 ```
 
-#Grup Rute
+### Grup Rute
 Terkadang banyak rute Anda akan berbagi persyaratan umum seperti segmen URL, middleware, namespace, dll. Daripada menentukan setiap opsi ini pada setiap rute secara individual, Anda dapat menggunakan grup rute untuk menerapkan atribut ke banyak rute.
 
 Atribut bersama ditentukan dalam format array sebagai parameter pertama Route::groupmetode
 
-#Middleware
+### Middleware
 Middleware diterapkan ke semua rute dalam grup dengan mendefinisikan daftar middleware dengan middlewareparameter pada larik atribut grup. Middleware akan dieksekusi sesuai urutan Anda mendefinisikan array ini:
 
 ```java
@@ -206,7 +206,7 @@ Route::group(['middleware' => ['foo', 'bar']], function()
 });
 ```
 
-#Ruang nama
+### Ruang nama
 Anda dapat menggunakan namespaceparameter dalam larik atribut grup Anda untuk menentukan namespace untuk semua pengontrol dalam grup:
 
 ```java
@@ -237,7 +237,7 @@ Route::group(['domain' => '{account}.myapp.com'], function()
 });
 ```
 
-#Awalan Rute
+### Awalan Rute
 Sekelompok rute dapat diawali dengan menggunakan prefixopsi dalam larik atribut grup:
 
 ```java
@@ -270,7 +270,7 @@ Route::group([
 });
 ```
 ----
-#Pengikatan Model Rute
+### Pengikatan Model Rute
 Pengikatan model Laravel menyediakan cara mudah untuk menyuntikkan instance kelas ke dalam rute Anda. Misalnya, alih-alih menyuntikkan ID pengguna, Anda dapat menyuntikkan seluruh instance kelas Pengguna yang cocok dengan ID yang diberikan.
 
 Pertama, gunakan metode router modeluntuk menentukan kelas untuk parameter yang diberikan. Anda harus mendefinisikan binding model Anda dalam RouteServiceProvider::bootmetode:
@@ -309,7 +309,7 @@ Route::bind('user', function($value)
     return User::where('name', $value)->first();
 });
 ```
-#Melempar 404 Kesalahan
+### Melempar 404 Kesalahan
 Ada dua cara untuk memicu kesalahan 404 secara manual dari suatu rute. Pertama, Anda dapat menggunakan abortpembantu:
 
 abort(404);

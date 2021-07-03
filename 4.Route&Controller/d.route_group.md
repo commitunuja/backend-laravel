@@ -1,10 +1,10 @@
-#Grup Rute
+### Grup Rute
 Grup rute memungkinkan Anda untuk berbagi atribut rute, seperti middleware atau ruang nama, di sejumlah besar rute tanpa perlu mendefinisikan atribut tersebut pada setiap rute individu. Atribut bersama ditentukan dalam format array sebagai parameter pertama metode.$router->group
 
 Untuk mempelajari lebih lanjut tentang grup rute, kami akan membahas beberapa kasus penggunaan umum untuk fitur tersebut.
 
 
-Middleware
+### Middleware
 Untuk menetapkan middleware ke semua rute dalam grup, Anda dapat menggunakan middlewarekunci dalam larik atribut grup. Middleware akan dieksekusi sesuai urutan Anda mendefinisikan array ini:
 
 $router->group(['middleware' => 'auth'], function () use ($router) {
@@ -17,7 +17,7 @@ $router->group(['middleware' => 'auth'], function () use ($router) {
     });
 });
 -----
-#Perutean Subdomain
+### Perutean Subdomain
 ###pendahuluan
 Grup rute juga dapat digunakan untuk menangani perutean subdomain. Subdomain dapat diberi parameter rute seperti halnya URI rute, memungkinkan Anda untuk menangkap sebagian subdomain untuk digunakan di rute atau pengontrol Anda. Subdomain dapat ditentukan dengan memanggil domainmetode sebelum mendefinisikan grup:
 
@@ -29,7 +29,7 @@ Route::domain('{account}.example.com')->group(function () {
 });
 ```
 -----
-#Awalan Rute
+### Awalan Rute
 The prefixMetode dapat digunakan untuk awalan setiap rute dalam kelompok dengan URI yang diberikan. Misalnya, Anda mungkin ingin mengawali semua URI rute dalam grup dengan admin:
 ```java
 Route::prefix('admin')->group(function () {

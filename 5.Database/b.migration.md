@@ -1,23 +1,26 @@
-###pengantar
+### pengantar
 Migrasi seperti kontrol versi untuk database Anda, memungkinkan tim Anda untuk dengan mudah memodifikasi dan berbagi skema database aplikasi. Migrasi biasanya dipasangkan dengan pembuat skema Laravel untuk dengan mudah membangun skema database aplikasi Anda. Jika Anda pernah harus memberi tahu rekan satu tim untuk menambahkan kolom secara manual ke skema basis data lokal mereka, Anda menghadapi masalah yang dipecahkan oleh migrasi basis data.
----
-#Menghasilkan Migrasi
+
+### Menghasilkan Migrasi
 Untuk membuat migrasi, gunakan make:migration perintah Artisa
-----
+
+```java
 php artisan make:migration create_users_table
----
+```
 Migrasi baru akan ditempatkan di database/migrationsdirektori Anda . Setiap nama file migrasi berisi stempel waktu yang memungkinkan Laravel menentukan urutan migrasi.
----
+
 the --tabledan --createpilihan juga dapat digunakan untuk menunjukkan nama tabel dan apakah migrasi akan menciptakan tabel baru. Opsi ini mengisi terlebih dahulu file rintisan migrasi yang dihasilkan dengan tabel yang ditentukan:
----
+
+```java
 php artisan make:migration create_users_table --create=users
 
 php artisan make:migration add_votes_to_users_table --table=users
+```
 
 Jika Anda ingin menentukan jalur keluaran khusus untuk migrasi yang dihasilkan, Anda dapat menggunakan --pathopsi saat menjalankan make:migrationperintah. Jalur yang diberikan harus relatif terhadap jalur dasar aplikasi Anda.
----
-#Struktur Migrasi
-----
+
+### Struktur Migrasi
+
 Kelas migrasi berisi dua metode: updan down. The upmetode yang digunakan untuk menambahkan tabel baru, kolom, atau indeks ke database Anda, sedangkan downmetode harus membalikkan operasi yang dilakukan oleh upmetode.
 
 Dalam kedua metode ini, Anda dapat menggunakan pembuat skema Laravel untuk membuat dan memodifikasi tabel secara ekspresif. Untuk mempelajari tentang semua metode yang tersedia di Schemabuilder, lihat dokumentasinya . Misalnya, contoh migrasi ini membuat flightstabel:
@@ -56,17 +59,15 @@ class CreateFlightsTable extends Migration
     }
 }
 ```
-#Menjalankan Migrasi
+### Menjalankan Migrasi
 Untuk menjalankan semua migrasi luar biasa Anda, jalankan migrateperintah Artisan:
 
 ```java
 php artisan migrate
-```
 Memaksa Migrasi Berjalan Dalam Produksi
-```java
 php artisan migrate --force
 ```
-#Mengembalikan Migrasi
+### Mengembalikan Migrasi
 Untuk mengembalikan operasi migrasi terbaru, Anda dapat menggunakan rollbackperintah. Perintah ini mengembalikan "kumpulan" migrasi terakhir, yang mungkin menyertakan beberapa file migrasi:
 
 ```java
